@@ -61,3 +61,29 @@ header a:hover{
   color: #e8491d;
   font-weight: bolder;
 }
+
+#showcase{
+  min-height: 400px;
+  background: url("../assests/images/yes.jpg")no-repeat 0 -200px;
+  background-size: cover;
+  text-align: right;
+  color: white;
+}
+
+#showcase h1{
+  font-size: 60px;
+  margin-bottom: 350px;
+}
+
+.button2{
+  margin-bottom: 100px;
+  background: white;
+  text-decoration-color: Blue;
+}
+
+#newsletter{
+  background: #35424a;
+  color:white;
+  padding-top: 10px;
+  min-height: 20px;
+}
