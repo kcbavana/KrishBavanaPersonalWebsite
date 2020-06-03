@@ -23,50 +23,59 @@
             <li><a href="blogs.html">Blogs</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="about.html">About</a></li>
-
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="showcase">
-      <div class="container">
-        <h1>Featured Project</h1>
-    </section>
-
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email...">
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="boxes">
-      <h2>What editors Think about Krish Bavana</h2>
-      <div class="container">
-        <div class="box">
-          <img src="./assests/images/Bhavu.jpeg">
-          <h3>Bhavana Agnihotram</h3>
-          <p>Krish is one of the bad writers I have seen in my life, please stop coding and learn writing</p>
+  <div id="slider">
+     <input type="radio" name="slider" id="slide1" checked>
+     <input type="radio" name="slider" id="slide2">
+     <input type="radio" name="slider" id="slide3">
+     <input type="radio" name="slider" id="slide4">
+     <div id="slides">
+        <div id="overflow">
+           <div class="inner">
+              <div class="slide slide_1">
+                 <div class="slide-content">
+                    <h2>Featured Blog of the week</h2>
+                 </div>
+              </div>
+              <div class="slide slide_2">
+                 <div class="slide-content">
+                    <h2>Featured Project</h2>
+                 </div>
+              </div>
+              <div class="slide slide_3">
+                 <div class="slide-content">
+                    <h2>Most loved Blog</h2>
+                 </div>
+              </div>
+              <div class="slide slide_4">
+                 <div class="slide-content">
+                    <h2>About Me</h2>
+                 </div>
+              </div>
+           </div>
         </div>
-        <div class="box">
-          <img src="./assests/images/askhu.jpeg">
-          <h3>Akshaya Potluri</h3>
-          <p>If you don't start writing ficition, we are not friends anymore</p>
-        </div>
-        <div class="box">
-          <img src="./assests/images/shreya.jpeg">
-          <h3>Shreya Chenna</h3>
-          <p>I really don't care about your writing, I just love editing</p>
-        </div>
-      </div>
-    </section>
+     </div>
+     <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+     </div>
+     <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+     </div>
+  </div>
 
     <footer>
       <p>Krish Bavana, Copyright &copy; 2020</p>
+      <p>&love</p>
     </footer>
   </body>
 </html>

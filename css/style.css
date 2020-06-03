@@ -28,7 +28,7 @@ ul{
 
 .dark{
   padding:15px;
-  background:#35424a;
+  background:#ececed;
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
@@ -36,15 +36,15 @@ ul{
 
 /* Header **/
 header{
-  background:#35424a;
-  color:#ffffff;
+  background:#ececed;
+  color:black;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#e8491d 3px solid;
+  border-bottom:#590880 3px solid;
 }
 
 header a{
-  color:#ffffff;
+  color:black;
   text-decoration:none;
   text-transform: uppercase;
   font-size:16px;
@@ -70,7 +70,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color:#e8491d;
+  color:#590880;
   font-weight:bold;
 }
 
@@ -79,102 +79,141 @@ header a:hover{
   font-weight:bold;
 }
 
-/* Showcase */
-#showcase{
-  min-height:400px;
-  background:url('../assests/images/yes.jpg') no-repeat 0 -200px;
-  text-align:right;
-  color:white;
+
+
+#slider {
+   margin: 0 auto;
+   width: 800px;
+   max-width: 100%;
+   text-align: center;
 }
-
-#showcase h1{
-  margin-top:100px;
-  font-size:55px;
-  margin-bottom:10px;
+#slider input[type=radio] {
+   display: none;
 }
-
-#showcase p{
-  font-size:20px;
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
 }
-
-/* Newsletter */
-#newsletter{
-  padding:15px;
-  color:#ffffff;
-  background:#35424a
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   background: #fff;
+   position: relative;
+   z-index: 1;
 }
-
-#newsletter h1{
-  float:left;
+#overflow {
+   width: 100%;
+   overflow: hidden;
 }
-
-#newsletter form {
-  float:right;
-  margin-top:15px;
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
 }
-
-#newsletter input[type="email"]{
-  padding:4px;
-  height:25px;
-  width:250px;
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
 }
-
-/* Boxes */
-#boxes{
-  margin-top:20px;
-  text-align: center;
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
 }
-
-#boxes .box{
-  float:left;
-  text-align: center;
-  width:30%;
-  padding:10px;
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
 }
-
-#boxes .box img{
-  width:90px;
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
 }
-
-
-footer{
-  padding:20px;
-  margin-top:20px;
-  color:#ffffff;
-  background-color:#e8491d;
-  text-align: center;
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
 }
-
-/* Media Queries */
-@media(max-width: 768px){
-  header #branding,
-  header nav,
-  header nav li,
-  #newsletter h1,
-  #newsletter form,
-  #boxes .box,
-  article#main-col,
-  aside#sidebar{
-    float:none;
-    text-align:center;
-    width:100%;
-  }
-
-  header{
-    padding-bottom:20px;
-  }
-
-  #showcase h1{
-    margin-top:40px;
-  }
-
-  #newsletter button, .quote button{
-    display:block;
-    width:100%;
-  }
-
-  #newsletter form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
-  }
+#slides .slide_1 {
+   background-image: url("../assests/images/krish.jpeg");
+   background-size: contain;
+}
+#slides .slide_2 {
+   background-image: url("../assests/images/yes.jpg");
+   background-size: contain;
+}
+#slides .slide_3 {
+   background-image: url("../assests/images/dreamer.JPG");
+   background-size: contain;
+}
+#slides .slide_4 {
+   background-image: url("../assests/images/chaitu.jpeg");
+   background-size: contain;
+}
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
 }
