@@ -13,8 +13,8 @@ const nextSlide = () => {
   // Check for next slide
   if (current.nextElementSibling) {
     current.nextElementSibling.classList.add('current');
-  }
-  else {
+  } else {
+    // Add current to start
     slides[0].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
@@ -44,7 +44,6 @@ next.addEventListener('click', e => {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 });
-
 
 prev.addEventListener('click', e => {
   prevSlide();
