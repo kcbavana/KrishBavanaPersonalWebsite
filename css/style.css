@@ -64,6 +64,7 @@ header a:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
@@ -300,6 +301,9 @@ footer{
   text-align: center;
 =======
 .buttons2{
+=======
+.buttons2{
+>>>>>>> parent of 7366776... almost done with home page
   height:48px;
   background:#590880;
   border:0;
@@ -440,5 +444,8 @@ footer{
       max-width: calc(100% - 140px);
       margin: 0 auto;
    }
+<<<<<<< HEAD
+>>>>>>> parent of 7366776... almost done with home page
+=======
 >>>>>>> parent of 7366776... almost done with home page
 }
