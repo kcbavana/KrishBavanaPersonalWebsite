@@ -92,7 +92,7 @@ header a:hover{
   opacity: 1;
 }
 
-.slide .content {
+.slide .content{
   position: absolute;
   bottom: 70px;
   left: -600px;
@@ -108,14 +108,14 @@ header a:hover{
   text-align: right;
 }
 
-.slide .buttons2{
-  align-items: right;
+
+.buttons2{
   height:28px;
   background:#590880;
   border:4;
   font-size: 20px;
-  padding-left: 20px;
-  padding-right:20px;
+  margin-top: 415px;
+  margin-left: 225px;
   color:#ffffff;
 }
 
