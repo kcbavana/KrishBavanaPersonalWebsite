@@ -93,25 +93,28 @@ header a:hover{
 }
 
 .slide .content {
-  position: absolute;
-  bottom: 70px;
-  left: -600px;
-  opacity: 0;
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .slide .content h1 {
   margin-bottom: 10px;
+  text-align: right;
 }
 
-.slide.current .content {
+.slide.current .content{
   opacity: 1;
   transform: translateX(600px);
   transition: all 0.7s ease-in-out 0.3s;
 }
+
+.button2{
+  margin: center;
+}
+
 
 .buttons2{
     height:28px;
@@ -194,9 +197,26 @@ header a:hover{
   margin-bottom: 50px;
 }
 
+
+
 .card-header:hover{
-  background-image: url('../assests/images/chaitu.jpeg');
-  background-size: 10vw;
+  background-image: url('../assests/images/bha.jpeg');
+  background-size: 100%;
+  background-position: center;
+  color: transparent;
+}
+
+.card-header2:hover{
+  background-image: url('../assests/images/askhu.jpeg');
+  background-size: 100%;
+  background-position: center;
+  color: transparent;
+}
+
+.card-header3:hover{
+  background-image: url('../assests/images/Shreya.jpeg');
+  background-size: 100%;
+  background-position: center;
   color: transparent;
 }
 
@@ -216,6 +236,21 @@ header a:hover{
 }
 
 .card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  color: #fff;
+}
+
+.card-header2{
+  text-align: center;
+  padding: 50px 10px;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  color: #fff;
+}
+.card-header3 {
   text-align: center;
   padding: 50px 10px;
   background-color: #7f53ac;
