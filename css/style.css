@@ -59,7 +59,7 @@ header nav{
 }
 
 header a:hover{
-  color:#cccccc;
+  color:#590880;
   font-weight:bold;
 }
 
@@ -75,7 +75,7 @@ header a:hover{
   position: relative;
   overflow: hidden;
   height: 650px;
-  width: 100vw;
+  width: 99vw;
 }
 
 .slide {
@@ -108,15 +108,10 @@ header a:hover{
   text-align: right;
 }
 
-
-.buttons2{
-  height:28px;
-  background:#590880;
-  border:4;
-  font-size: 20px;
-  margin-top: 415px;
-  margin-left: 225px;
-  color:#ffffff;
+.slide.current .buttons2 {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
 }
 
 .slide.current .content {
@@ -174,19 +169,19 @@ header a:hover{
 
 /* Backgorund Images */
 .slide:first-child {
-  background: url('../assests/images/love.jpeg') no-repeat
+  background: url('../assets/images/love.jpeg') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-  background: url('../assests/images/yes.jpg') no-repeat
+  background: url('../assets/images/yes.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
-  background: url('../assests/images/blog1.jpeg') no-repeat
+  background: url('../assets/images/blog1.jpeg') no-repeat
     center top/cover;
 }
 .slide:nth-child(4) {
-  background: url('../assests/images/aboutme.jpeg') no-repeat
+  background: url('../assets/images/aboutme.jpeg') no-repeat
     center top/cover;
 }
 
@@ -256,6 +251,114 @@ header a:hover{
   .card {
     width: 80%;
   }
+}
+
+
+#about {
+  margin-right: 175px;
+  margin-top: 7em;
+  align-items: center;
+
+
+}
+
+#about img {
+  max-width: 15em;
+  position: relative;
+  bottom: 7.5em;
+}
+
+#about .details {
+  margin-top: -2em;
+}
+
+#about h2 {
+  color: #590880;
+  font-size: 3.8em;
+  padding-bottom: 1em;
+}
+
+#about span {
+  font-weight: 300;
+  font-size: .7em;
+}
+
+#about p {
+  margin-top: 1em;
+  font-family: "roboto";
+  font-weight: 300;
+}
+
+
+h2{
+	font-family: "Lato", sans-serif !important;
+	font-weight: 900 !important;
+}
+
+
+.img-circle {
+		border-radius: 50%;
+}
+
+
+.my-button {
+		font-size: 1em;
+		line-height: normal;
+		text-transform: uppercase;
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		-webkit-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out, color 0.2s 0.3s;
+		letter-spacing: 0;
+		border-radius: 45px;
+		height: auto;
+		padding: .8em 2.1em;
+}
+
+.my-button:hover {
+	cursor: pointer;
+	padding: .8em 2.7em;
+}
+
+.my-button:active,
+.my-button:focus,
+.my-button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.cta .cta-button{
+  color: #590880;
+  margin-left: 150px;
+  text-transform: uppercase;
+  border: 2px solid #590880;
+  border-radius: 50px;
+  background: white;
+}
+
+.my-arrow-div{
+  margin-left: 150px;
+}
+
+.cta .cta-button:hover, .cta .cta-button:focus {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+  background-color:#590880;
+  color: white;
+}
+
+#about i {
+margin-top: 2em;
+}
+
+.fa {
+font-size: 1.2em;
+padding: 0.1em 0.4em;
+}
+
+.fa:hover {
+cursor: pointer;
 }
 
 footer{
