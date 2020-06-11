@@ -168,6 +168,7 @@ h2 {
 
 .aboutP{
     color: black;
+    display: inline-block;
     text-align: center;
     padding: 70px;
     margin-top: -75px;
