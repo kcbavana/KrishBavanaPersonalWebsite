@@ -122,14 +122,3 @@
 	color: #7d7d7d;
 }
 
-
-.profile-photo {
-	width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-size: cover;
-    margin-top: -100px;
-    margin-bottom: 40px;
-
-}

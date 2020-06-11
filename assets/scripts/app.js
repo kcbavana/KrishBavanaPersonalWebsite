@@ -57,7 +57,7 @@ const Portfolio = function() {
 	function typeAnimation() {
 		Typed.new("#writing-text", {
 			strings: [
-				"Krishna Chaitanya Bavana.", "Krish Bavana.", "Chaitu Bavana.", "Krishna.", "Chaitanya", "Krish Bavana"
+				"Krishna Chaitanya Bavana.", "Krish Bavana.", "Chaitu Bavana.", "Krishna.", "Chaitanya.", "Krish Bavana."
 			],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,
