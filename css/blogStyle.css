@@ -1,0 +1,33 @@
+.blog-heading {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1000px;
+    margin-top: 50px;
+}
+
+.blog-title{
+    color: black;
+    font-weight:bold;
+    font-family: sans-serif;
+}
+
+.blog-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -1000px;
+}
+
+.blog-body{
+    text-align: left;
+
+}
+
+.blog-paragraph{
+    color:black;
+    width: 755px;
+    padding: 1px;
+    margin-left: 390px;
+    margin-top: 15px;
+}
