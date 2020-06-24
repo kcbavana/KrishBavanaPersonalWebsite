@@ -198,13 +198,15 @@ header a:hover{
 
 .card-header:hover{
   background-image: url('../assets/images/bha.jpeg');
-  background-size: 10vw;
+  background-size: 250px 200px;
+  background-repeat: no-repeat;
   color: transparent;
 }
 
 .card-header2:hover{
   background-image: url('../assets/images/akshu.jpeg');
-  background-size: 10vw;
+  background-size: 250px 200px;
+  width: 100%;
   background-repeat: no-repeat;
   color: transparent;
 }
