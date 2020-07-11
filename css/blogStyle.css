@@ -1,3 +1,4 @@
+
 .blog-heading {
     text-align: center;
     font-size: 25px;
@@ -112,7 +113,11 @@ a:hover{
     }
     
     .date{
-        margin-right: 550px;
+        margin-right: 10px;
+    }
+
+    .datep{
+        margin-right: 10px;
     }
 
 }
@@ -131,9 +136,15 @@ a:hover{
     }
 
     .date{
-        margin-right: 0px;
-        text-align: left;
+        margin-right: 10px;
 
+
+    }
+
+    .datep{
+        margin-right: 10px;
+        display: inline;
+        overflow: hidden;
     }
 
     .blog-heading{

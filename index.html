@@ -7,6 +7,7 @@
     <meta name = "keywords" content = "Krish Bavana, krish, Krishna, Chaitanya">
     <meta name = "author" content = "Krish Bavana">
     <title> Krish Bavana | Home Page</title>
+    <link rel = "icon" href = "./assets/images/favicon.jpeg"> 
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -18,45 +19,51 @@
   <body>
     <header>
       <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Krish </span>Bavana</h1>
+        <div id="logo">
+          <a href="index.html"><img src= "./assets/images/try3.png" href="index.html" alt="Avatar" style="width:15%", height="165px"></a>
         </div>
         <nav>
-          <ul>
+          <div class="tootle-menu" >
+            <h1 id="toggle-bar">
+              ☰
+            </h1>
+          </div>
+          <ul class="mainMenu">
             <li class="current0"><a href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="blogs.html">Blogs</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
-        </nav>
+        </nav>	
+
       </div>
     </header>
     <div class="slider">
       <div class="slide current">
-        <div class="content">
+        <div class="content current">
             <h1><span class="slideText">Featured </span>Blog</h1>
-            <a href="http://visuallightbox.com" target="_blank" class = "test">Click Here</a>
+            <a href="./Blogs/Things do before first year college orientation.html" class="forward">Click Here</a>
         </div>
       </div>
 
       <div class="slide">
         <div class="content">
             <h1>Featured Project</h1>
-            <a href="http://visuallightbox.com" target="_blank">Click here to visit ABOUT ME</a>
+            <a class = "removeLink" href="https://github.com/kcbavana/GoogleMapsChallenge" target = "blank">Store Locator Challenge</a></h1>
         </div>
       </div>
       <div class="slide">
         <div class="content">
             <h1>Most loved Blog</h1>
-            <a href="http://visuallightbox.com" target="_blank">Click here to visit ABOUT ME</a>
+            <a class = "removeLink" href="./Blogs/Be a Dreamer.html">Continue Reading</a>
       </div>
 
       </div>
       <div class="slide">
         <div class="content">
             <h1>About Me</h1>
-            <a href="http://visuallightbox.com" target="_blank">Click here to visit ABOUT ME</a>
+            <a href="./about.html" target="_blank">About Me</a>
         </div>
       </div>
 
@@ -68,7 +75,7 @@
     </div>
     <div class="container">
       <div class="heading">
-        <h1><span class="highlight">What People Think About Krish Bavana</span></h1>
+        <h1><span class="highlight">What Blog Editors Think About Krish Bavana</span></h1>
       </div>
       <div class="row">
         <div class="card">
@@ -77,7 +84,7 @@
           </div>
           <div class="card-body1">
             <p class="try">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+              Sitting in a room full of people and the minute you get a fun, bright, energetic vibe, you know Krish is there. Never letting a smile down, always full of energy, passionate about code, and simply if I were to define hard work, it’s none other than Krish Bavana!
           </div>
         </div>
         <div class="card">
@@ -86,7 +93,7 @@
           </div>
           <div class="card-body1">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+              Krish is one of the most determined, charismatic, and ambitious people that I’ve ever had the pleasure of meeting. He is a paragon of humility and creativity, making him an amazing writer and storyteller. Whether it be coding, mathematics, or writing, he pours his heart and soul into everything he does, and his work is better for it.
             </p>
           </div>
         </div>
@@ -96,15 +103,17 @@
           </div>
           <div class="card-body1">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+              I am still waiting for her quote and picture
             </p>
           </div>
         </div>
       </div>
     </div>
+    <script src = "app.js"></script>
     <script src="./js/main.js"></script>
     <footer>
       <p>Krish Bavana, Copyright &copy; 2020</p>
     </footer>
   </body>
+  <script src = "./js/app.js"></script>
 </html>

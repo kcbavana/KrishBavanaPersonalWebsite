@@ -1,7 +1,8 @@
 const slides = document.querySelectorAll('.slide');
+const content = document.querySelectorAll('.content');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
+const auto = false; // Auto scroll
 const intervalTime = 5000;
 let slideInterval;
 

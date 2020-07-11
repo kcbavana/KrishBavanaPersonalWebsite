@@ -22,7 +22,7 @@ ul{
 header{
   background:#ececed;
   color:black;
-  padding-top:30px;
+  padding-top:-15px;
   min-height:70px;
   border-bottom:#590880 3px solid;
 }
@@ -42,6 +42,13 @@ header li{
 
 header #branding{
   float:left;
+}
+
+header #logo{
+  margin-top: -70px;
+  margin-bottom: -70px;
+  padding-right: 100px;
+  margin-right: 60px;
 }
 
 header #branding h1{
@@ -88,7 +95,7 @@ header a:hover{
   transition: opacity 0.4s ease-in-out;
 }
 
-.slide.current {
+.slide.current{
   opacity: 1;
 }
 
@@ -147,6 +154,14 @@ header a:hover{
   color: #333;
 }
 
+.burger{
+  border: 0;
+  background-color: transparent;
+  color:#590880;
+  font-size: 30px;
+}
+
+
 @media (max-width: 500px) {
   header #branding,
   header nav,
@@ -169,7 +184,7 @@ header a:hover{
 
 /* Backgorund Images */
 .slide:first-child {
-  background: url('../assets/images/love.jpeg') no-repeat
+  background: url('../assets/images/blog34.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
@@ -197,23 +212,25 @@ header a:hover{
 }
 
 .card-header:hover{
-  background-image: url('../assets/images/bha.jpeg');
-  background-size: 250px 200px;
+  background-image: url('../assets/images/bhavana.jpeg');
+  background-size: 250px 300px;
   background-repeat: no-repeat;
   color: transparent;
 }
 
 .card-header2:hover{
   background-image: url('../assets/images/akshu.jpeg');
-  background-size: 250px 200px;
+  background-size: 250px 300px;
+  padding-bottom: 40px;
   width: 100%;
   background-repeat: no-repeat;
   color: transparent;
 }
 
 .card-header3:hover{
-  background-image: url('../assets/images/bha.jpeg');
-  background-size: 10vw;
+  background-image: url('../assets/images/shreya.jpeg');
+  background-size: 250px 400px;
+  margin-bottom: 10px;
   color: transparent;
 }
 
@@ -297,3 +314,96 @@ footer{
   background-color:#590880;
   text-align: center;
 }
+
+.logo{
+  padding-top: 30px;
+}
+
+@media (max-width: 1024px){
+  #logo{
+    width:200%;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+    margin-top: 40px;
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 768px){
+  #logo{
+    width:200%;
+    margin-top: -50px;
+    margin-left: 25px;
+  }
+
+  .mainMenu{
+    display: none;
+    margin-bottom: 10px;
+
+  
+  }
+  .mainMenu.hamburger{
+    display: block;
+  }
+
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+    margin-right: 10px;
+  }
+
+  
+}
+
+@media (max-width: 414px){
+  #logo{
+    width:450%;
+    margin-left: 75px;
+  }
+
+  #toggle-bar{
+    margin-right: 300px;
+    vertical-align: top;
+    margin-top: -30px;
+    padding-top: -80px;
+  }
+}
+
+@media (max-width: 375px){
+  #logo{
+    width:350%;
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 320px){
+  #logo{
+    width:400%;
+    margin-left: 70px;
+  }
+
+  #toggle-bar{
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 768px){
+  .mainMenu{
+    display: initial;
+    margin-top: -40px;
+  }
+
+  #toggle-bar{
+    display: none;
+    margin-top: 10px;
+  }
+
+}
+

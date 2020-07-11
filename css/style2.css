@@ -1,21 +1,32 @@
+
+img{
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
 
 /*********** Global Styles********/
 
 body, html {
-		background-color: #E3E3E3;
+		background-color: #ececed;
 }
 
 h2 {
-	font-family: "Lato", sans-serif !important;
+	display: block;
+    font-family: "Lato", sans-serif !important;
     font-weight: 900 !important;
-    padding-right: 1em
-
+    padding-right: 3em;
 }
 
-.wrapper {
-		background: #E3E3E3;
-}
+
 
 .img-circle {
 		border-radius: 50%;
@@ -119,31 +130,12 @@ h2 {
 	cursor: pointer;
 }
 
-/*** teaching ***/
-#teaching {
-	padding: 6em 4em 3em;
-}
-
-#teaching h2 {
-	color: #595959;
-}
-
-#teaching .tag-line {
-	color: #848282;
-	font-size: 1.4em;
-}
-
-#teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
-}
 
 
 .profile-photo {
 	width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 195px;;
     border-radius: 50%;
     background-size: cover;
     margin-top: -100px;
@@ -167,18 +159,134 @@ h2 {
 }
 
 .aboutP{
-    color: black;
-    display: inline-block;
-    text-align: center;
-    padding: 70px;
-    margin-top: -75px;
-    font-size: 15px;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin-left: 350px;
+	margin-right: 320px;
+	font-size: 15px;
 }
 
-@media (max-width: 650px){
+
+@media (max-width: 768px){
     #about h2 {
 		color: #590880;
 		font-size: 3.8em;
         padding-bottom: 1em;
-    }
+	}
+	
+	h2 {
+		display: block;
+		font-family: "Lato", sans-serif !important;
+		font-weight: 900 !important;
+		padding-right: 10px;
+	}
+
+	.profile-photo {
+		width: 200px;
+		height: 200px;
+		margin: 300px;
+		border-radius: 50%;
+		background-size: cover;
+		margin-top: -100px;
+		margin-bottom: 40px;
+	}
+	
+	.aboutP{
+		color: black;
+		display: inline-block;
+		text-align: center;
+		padding: 0;
+		margin-left: 90px;
+		margin-right: 80px;
+		font-size: 15px;
+		text-align: left;
+	}
 }
+
+@media (max-width: 414px){
+		#logo{
+		  width:350%;
+		  margin-left: 75px;
+		}
+	  
+	h2 {
+		display: block;
+		font-family: "Lato", sans-serif !important;
+		font-weight: 900 !important;
+		padding-left: 15px;
+	}
+
+	.profile-photo {
+		width: 200px;
+		height: 200px;
+		margin: 100px;
+		border-radius: 50%;
+		background-size: cover;
+		margin-top: -100px;
+		margin-bottom: 40px;
+	}
+}
+
+
+@media (max-width: 411px){
+	h2 {
+		display: block;
+		font-family: "Lato", sans-serif !important;
+		font-weight: 900 !important;
+		padding-left: 15px;
+	}
+
+	.profile-photo {
+		width: 200px;
+		height: 200px;
+		margin: 90px;
+		border-radius: 50%;
+		background-size: cover;
+		margin-top: -100px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 375px){
+	h2 {
+		display: block;
+		font-family: "Lato", sans-serif !important;
+		font-weight: 900 !important;
+		padding-left: 15px;
+	}
+
+	.profile-photo {
+		width: 200px;
+		height: 200px;
+		margin: 100px;
+		border-radius: 50%;
+		background-size: cover;
+		margin-top: -100px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 325px){
+	h2 {
+		display: block;
+		font-family: "Lato", sans-serif !important;
+		font-weight: 900 !important;
+		padding-left: 1px;
+	}
+
+	.profile-photo {
+		width: 200px;
+		height: 200px;
+		margin: 60px;
+		border-radius: 50%;
+		background-size: cover;
+		margin-top: -100px;
+		margin-bottom: 40px;
+	}
+}
+
+
+
+  

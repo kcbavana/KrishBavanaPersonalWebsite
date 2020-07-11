@@ -1,0 +1,134 @@
+.page-banner{
+    background-color: black;
+    padding-left: 125px;
+    margin-top: 15px;
+}
+
+.whitesheet{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 30px 1.5em;
+    background-color: white;
+    padding-left: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.project-preview {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: whitesmoke;
+    transition: 0.3s;
+    width: 85%;
+
+  }
+  
+  .project-preview:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+
+
+  .project-header{
+      padding-left: 15px;
+      font-size: 15px;
+      color:black;
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  .info{
+    color:#7f53ac;
+    padding-left: 15px;
+}
+
+
+.removeLink{
+  color:black;
+  list-style-type: none;
+  text-decoration:none;
+}
+
+
+@media (max-width: 1025px){
+
+    .whitesheet{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-gap: 20px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .project-header{
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    .page-namer{
+        padding-left: 90px;
+    }
+}
+
+@media (max-width: 812px){
+
+    .whitesheet{
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-gap: 15px 1.5em;
+        padding-left: 75px;
+
+    }
+    .project-header{
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    .page-namer{
+        padding-left: 90px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .whitesheet{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 20px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .project-header{
+        font-size: 10px;
+    }
+
+    .page-namer{
+        padding-left: 80px;
+    }
+
+    h1{
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 650px){
+
+    .whitesheet{
+        display: grid;
+        grid-template-columns: 0.8fr;
+        grid-gap: 15px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .project-header{
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    .page-namer{
+        padding-left: 70px;
+    }
+}

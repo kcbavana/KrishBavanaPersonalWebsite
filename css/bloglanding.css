@@ -1,0 +1,123 @@
+.container-whitesheet{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 30px 1.5em;
+    background-color: white;
+    padding-left: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.blog-preview {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #e4e1e1;
+    transition: 0.3s;
+    width: 85%;
+
+  }
+  
+  .blog-preview:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .blog-data {
+    padding: 2px 30px;
+  }
+
+  .blog-header{
+      color:black;
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .blog-snippet{
+      color:black;
+  }
+
+  .date{
+      color:#7f53ac;
+  }
+
+
+  .removeLink{
+    color:black;
+    list-style-type: none;
+    text-decoration:none;
+  }
+
+h2{
+      color: #7f53ac;
+      font-size: 25px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.page-namer{
+    background-color: black;
+    padding-left: 125px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+@media (max-width: 1025px){
+
+    .container-whitesheet{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-gap: 20px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .page-namer{
+        padding-left: 90px;
+    }
+}
+
+@media (max-width: 812px){
+
+    .container-whitesheet{
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-gap: 15px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .page-namer{
+        padding-left: 90px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .container-whitesheet{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-gap: 20px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .page-namer{
+        padding-left: 90px;
+    }
+}
+
+@media (max-width: 650px){
+
+    .container-whitesheet{
+        display: grid;
+        grid-template-columns: 0.8fr;
+        grid-gap: 15px 1.5em;
+        padding-left: 75px;
+
+    }
+
+    .page-namer{
+        padding-left: 90px;
+    }
+}
