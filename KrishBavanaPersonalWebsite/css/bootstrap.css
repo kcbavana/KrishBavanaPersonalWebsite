@@ -1,0 +1,291 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#ececed;
+    color: #fff;
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:20px auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  
+  /* Header **/
+  header{
+    background:#ececed;
+    color:black;
+    padding-top:-15px;
+    min-height:70px;
+    border-bottom:#590880 3px solid;
+  }
+  
+  header a{
+    color:black;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #logo{
+    margin-top: -70px;
+    margin-bottom: -70px;
+    padding-right: 100px;
+    margin-right: 60px;
+  }
+  
+  header #branding h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  .highlight, header .current0 a{
+    color:#590880;
+    font-weight:bold;
+  }
+  
+  header a:hover{
+    color:#590880;
+    font-weight:bold;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .burger{
+    border: 0;
+    background-color: transparent;
+    color:#590880;
+    font-size: 30px;
+  }
+  
+  .carousel-caption{
+    background-color: #ba399a;
+    opacity: 0.5;
+    width: 20%;
+    height: 20%;
+  
+  }
+  
+  @media (max-width: 500px) {
+    header #branding,
+    header nav,
+    header nav li{
+      float:none;
+      display: block;
+      text-align:center;
+      width:100%;
+    }
+  }
+  
+  
+  
+  .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .content a{
+    text-decoration: none;
+    color: black
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background: white;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  
+  .card-header {
+    color: #7f53ac;
+    text-align: center;
+  }
+  
+  .card-body1 {
+    display: block;
+    text-align: left;
+    color:black;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
+  
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:white;
+    background-color:#590880;
+    text-align: center;
+  }
+  
+  .logo{
+    padding-top: 30px;
+  }
+  
+  @media (max-width: 1435px){
+    #logo{
+      width:150%;
+      margin-top: -40px;
+      margin-left: -20px;
+    }
+  }
+  
+  @media (max-width: 1024px){
+    #logo{
+      width:200%;
+      margin-top: -40px;
+      margin-left: 10px;
+    }
+    
+    header li{
+      float:left;
+      display:inline;
+      padding: 0 20px 0 20px;
+      margin-top: 40px;
+      margin-right: 45px;
+    }
+  
+  
+  }
+  
+  @media (max-width: 768px){
+    #logo{
+      width:200%;
+      margin-top: -50px;
+      margin-left: 25px;
+    }
+  
+    .mainMenu{
+      display: none;
+      margin-bottom: 10px;
+  
+    
+    }
+    .mainMenu.hamburger{
+      display: block;
+    }
+  
+    header li{
+      float:left;
+      display:inline;
+      padding: 0 20px 0 20px;
+      margin-right: 10px;
+    }
+    
+  }
+  
+  @media (max-width: 414px){
+    #logo{
+      width:450%;
+      margin-left: 75px;
+    }
+  
+    #toggle-bar{
+      margin-right: 300px;
+      vertical-align: top;
+      margin-top: -30px;
+      padding-top: -80px;
+    }
+
+    .carousel-inner{
+        width: 30%;
+    }
+  
+  }
+  
+  @media (max-width: 375px){
+    #logo{
+      width:350%;
+      margin-left: 90px;
+    }
+  }
+  
+  @media (max-width: 320px){
+    #logo{
+      width:400%;
+      margin-left: 70px;
+    }
+  
+    #toggle-bar{
+      margin-left: 20px;
+    }
+  
+  
+  }
+  
+  @media (min-width: 768px){
+    .mainMenu{
+      display: initial;
+      margin-top: -40px;
+    }
+  
+    #toggle-bar{
+      display: none;
+      margin-top: 10px;
+    }
+  
+  }
+  
+  
