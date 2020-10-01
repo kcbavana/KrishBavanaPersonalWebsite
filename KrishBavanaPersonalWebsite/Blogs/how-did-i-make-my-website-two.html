@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width = device-width">
+    <meta name = "description" content = "How did I make my personal Website? (Part Two)">
+    <meta name = "keywords" content = "Krish Bavana, website, krish website, personal website, college, high school, front-end, HTML, CSS, JavaScript, jQuery, Website, personal website, part one, to be continued">
+    <meta name = "author" content = "Krish Bavana">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How did I make my personal Website? (Part Two)" />
+    <meta property="og:description" content="It's been more than a year since I started writing blogs, and so far, many of my close friends have asked me only one question. “When will you get your own domain?”I was waiting for the right moment to get my own domain and website, even though I have been waiting for longtime. I promised myself that if I ever got one, I would code the entire website by myself. That finally happened earlier this summer. From the planning stage to the website going live, it took a full two months of my summer break. In the beginning, I wasn’t exactly the greatest at CSS and I had absolutely zero understanding or experience with Javascript, but i knew that if I wanted to achieve everything I planned for this summer, I had to finish the website by July 31st, at the latest..."/>
+    <meta property="og:site_name" content="Krish Bavana Website" />
+    <meta name="twitter:creator" content="@kcbavana" />
+    <meta name="twitter:site" content="@kcbavana" />
+    <meta property="fb:app_id" content="Krishna Chaitanya Bavana" />
+    <title>How did I make my personal Website? (Part Two)</title>
+    <link rel = "icon" href = "../assets/images/favicon.jpeg"> 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/blogStyle.css" />
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <a href="../index.html"><img src= "../assets/images/try3.png" alt="Avatar" style="width:158.3px", height="165px"></a>
+        </div>
+        <nav>
+          <div class="tootle-menu" >
+            <h1 id="toggle-bar">
+              ☰
+            </h1>
+          </div>
+          <ul class="mainMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../project.html">Projects</a></li>
+            <li class="current0"><a href="../blogs.html">Blogs</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>	
+      </div>
+    </header>
+    <div class ="back-blogs">
+      <a href="../blogs.html" class="previous">&laquo; Back to all Blogs</a>
+    </div>
+    
+    <div class="blog-heading">
+      <h1><span class="blog-title">How did I make my personal Website? (Part Two)</h1>
+      <p class = "daten">August 14th, 2020</p>
+    </div>
+
+    <img class = "blog-image" src="../assets/images/blog36.jpg" alt="Blog Image">
+    <div class="blog-body">
+      <p class = blog-paragraph>
+        If you are reading this blog without reading the <a class="linker "href="../blogs/how-did-i-make-my-personal-website-one.html">first part</a>, please read the first part and come here again because it discusses how I started the website, what challenges I faced in designing it, and what languages I had to use for certain features. This part of the blog contains how I hosted the website and  the challenges I faced during and after hosting it.
+      </p>
+      <p class = blog-paragraph>
+        I chose AWS to host my website because of their super fast hosting services. I was even more impressed when I started to learn about their CloudFront service, or Route 53 service; I was able to visualize the benefits that came with AWS just looking at the setup.  It’s always nice to use Platform as a Service (PaaS) because we’ll know how it will work in real life without having to worry about the hardware. Before hosting the website, I got the domain name from “godaddy.com,” so I didn’t have to purchase the domain from AWS. I also had to make sure the  website has an SSL certificate, so I decided to set it up using the certificate manager service in AWS. First and foremost, I began by creating a bucket in the S3 service and added all of the files to the bucket. I named the bucket “krishbavana” because it has to be globally unique. I made the bucket accessible to the public, and removed all permissions.  Once I was able to make it public, I used  the S3 link for testing the website. After I was sure all the files were moved and the testing was done, I got the SSL certificate for the website and added it to the Route 53 service, a service that helps maintain all DNS records. I was able to set all the DNS records and proceeded to add  my domain to the service. Once I was done setting up all the records, I used the CloudFront service to set the cache and then deployed the website. The entire hosting process took less than 3 hours including deployment, thanks to AWS. The struggle was alright until here, but the real tension began now. 
+      </p>
+      <p class = blog-paragraph>
+          When I first deployed the website, there were many things that were malfunctioning or incomplete; I didn’t have a hamburger menu, the slider on the homepage was not working, the resume page had no content, and I only had 18 days until my deadline. I didn’t want to touch the slider just yet, so I began working on the hamburger menu. I was keen on not using Bootstrap or any of the libraries for the, so I decided to just use Javascript and write the hamburger menu. I worked on the hamburger for two days and implemented it on every single page. Now I was onto the most important part of the website: the slider on the homepage. When I was explaining it to one of my friends, he asked me why I was being so stubborn about the slider. My only goal was coding the best website possible, but it was only possible with the slider. Finally, after many suggestions from my friends and fellow coders, I decided to use the Bootstrap Slider.. I think it was the best decision I ever made; I took two days to read the Bootstrap, and I implemented it in less than a day. I was almost done with everything and there were no more  issues on my part. .The only thing left was my resume page, but I wasn’t really worried about it because it only took an  only hour to complete. I shared  my website with my closest friends and family  and asked them to make sure it works and loads properly  on their devices. In troubleshooting all the problems we faced, I found the most difficult of them all to be the header jumper, which was malfunctioning  because of the Bootstrap layout. I tried a variety of different things and finally implemented Bootstrap on every page to fix the jumps. There were a few hiccups but thankfully  no major issues in the process. I am not sure of the exact number, but we tested it in more than 30 different devices before I was happy with the output. It took more than seven days to fix all the bugs and create a resume page. I added analytics, as well as  the search console to the website.  I constantly checked the website SEO scores and tried to fix the bugs I found. I used the Lighthouse tool for testing and fixed some more bugs, since I wanted to give the best output I can. Finally I decided the date to launch the website and successfully launched on July 27th. All in all, the process was a very small journey, but every day was challenging and interesting. I don’t really know if I will go into front-end development, but I enjoyed this space.
+      </p>
+    </div>
+    <div class ="back">
+    <br>
+        <a href="../blogs.html" class="previous">&laquo; Back to all Blogs</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Krish Bavana, Copyright &copy; 2020</p>
+    </footer>
+    <script src = "../js/app.js"></script>
+  </body>

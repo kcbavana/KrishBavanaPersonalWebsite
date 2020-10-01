@@ -95,7 +95,12 @@ img{
   color: Black;
   font-weight: bolder;
 }
-
+.linker{
+  color:#590880;
+}
+.img-fluid{
+  width: 100%;
+}
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
@@ -194,11 +199,29 @@ h5{
   color: black;
 }
 
+.slide-one{
+  width:70%;
+  margin-left: 230px;
+}
+.full-width-div{
+  background-color: black;
+}
 
+@media screen and (min-width: 1792px){
+	.carousel-caption{
+		margin-left:475px;
+	}
+}
+
+@media screen and (max-width: 1326px){
+	.carousel-caption{
+	  margin-left: 340px;
+	}
+}
 
 @media screen and (max-width: 1024px) {
   .card {
-    width: 40%;
+    width: 32%;
   }
 
   h5{
@@ -207,6 +230,14 @@ h5{
 
   .contact-info{
     margin-left: 650px;
+  }
+
+  .slide-one{
+    width:100%;
+    margin-left: 0;
+  }
+  .full-width-div{
+    background-color: none;
   }
 
 
@@ -414,6 +445,7 @@ footer{
 
   .d-block{
     height: 300px;
+    width: 100%;
   }
 
   h5{
@@ -452,7 +484,7 @@ footer{
     padding: 0;
     margin-left: 60px;
     margin-bottom: 25px;
-    padding-top: 5px;
+    padding-top: 15px;
   }
 
   #toggle-bar{
